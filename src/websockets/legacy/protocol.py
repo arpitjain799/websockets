@@ -28,6 +28,7 @@ from typing import (
     cast,
 )
 
+from ..asyncio.compatibility import asyncio_timeout
 from ..datastructures import Headers
 from ..exceptions import (
     ConnectionClosed,
@@ -53,7 +54,6 @@ from ..frames import (
 )
 from ..protocol import State
 from ..typing import Data, LoggerLike, Subprotocol
-from .compatibility import asyncio_timeout
 from .framing import Frame
 
 
